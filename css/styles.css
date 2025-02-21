@@ -95,10 +95,11 @@ img {
 
 .header-list-link.current {
     position: relative;
+    color: #404bbf;
 }
 
 .header-list-link.current::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
