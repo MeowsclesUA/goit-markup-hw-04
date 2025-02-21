@@ -3,20 +3,25 @@ body {
     color: #434455;
     background-color: #fff;
 }
-ul,ol {
+
+ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
-p,h1,h2,h3,h4,h5,h6 {
+
+p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 img {
     display: block;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -30,6 +35,7 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -40,8 +46,10 @@ img {
     display: flex;
     align-items: center;
 }
+
 .header-page {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -74,7 +82,7 @@ img {
 .header-list-item {}
 
 .header-list-link {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -82,11 +90,30 @@ img {
     color: #2e2f42;
     display: block;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.header-list-link.current {
+    position: relative;
+}
+
+.header-list-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+}
+
 .header-list-link:hover,
-.header-list-link:focus {
+.header-list-link:focus,
+.header-list-link.current {
     color: #404bbf;
 }
+
 .address {
     font-style: normal;
     margin-left: auto;
@@ -102,25 +129,33 @@ img {
 .address-list-item {}
 
 .address-list-link {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .address-list-link:hover,
 .address-list-link:focus {
     color: #404bbf;
 }
+
 .first-section {
     background-color: #2e2f42;
     margin-top: 0;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimg/people-office\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .first-section-paragraph {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -150,10 +185,12 @@ img {
     border-radius: 4px;
     margin-left: 480px;
 }
+
 .btn:hover,
 .btn:focus {
     background-color: #404bbf;
 }
+
 .second-section {
     padding: 120px 0 120px;
 }
@@ -167,18 +204,31 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
+.second-section-grup {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+}
+
+.second-section-icon {
+    margin: 24px 100px;
+}
+
 .second-section-subtitle {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
 .second-section-text {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -192,7 +242,7 @@ img {
 }
 
 .third-section-title {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -207,7 +257,7 @@ img {
     display: flex;
     gap: 24px;
     padding-bottom: 120px;
-    
+
 }
 
 .third-section-item {
@@ -221,8 +271,9 @@ img {
     padding: 32px 0 32px;
     text-align: center;
 }
+
 .third-section-subtitle {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -232,7 +283,7 @@ img {
 }
 
 .third-section-text {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -240,12 +291,37 @@ img {
     color: #434455;
 }
 
+.third-section-link {
+    background-color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: #f4f4fd;
+    margin-top: 8px;
+}
+
+.third-section-link:hover,
+.third-section-link:focus {
+    background-color: #404bbf;
+}
+
+.grup {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.third-section-icon {}
+
 .fourth-section {
     padding: 120px 0 120px 0;
 }
 
 .fourth-section-title {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -274,7 +350,7 @@ img {
 }
 
 .fourth-section-subtitle {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -284,7 +360,7 @@ img {
 }
 
 .fourth-section-text {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -296,9 +372,11 @@ img {
     background-color: #2e2f42;
     padding: 100px 0 100px;
 }
+
 .footer-container {
     align-items: center;
     padding-right: 864px;
+    display: flex;
 }
 
 .footer-logo {
@@ -318,10 +396,45 @@ img {
 }
 
 .footer-text {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto"sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+    height: 72px;
+}
+
+.footer-soc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.footer-grup {
+    display: flex;
+    gap: 16px;
+}
+
+.soc-grup {
+    margin-left: 120px;
+}
+
+.footer-link {
+    background-color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: #f4f4fd;
+    margin-top: 16px;
+}
+.footer-link:hover,
+.footer-link:focus{
+    background-color: #31d0aa;
 }
