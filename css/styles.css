@@ -439,15 +439,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .footer-grup {
-    display: flex;
-    gap: 16px;
+    
 }
 
 .soc-grup {
-    margin-left: 120px;
+    
+}
+.footer-div{
+    margin-right: 120px;
+    align-items: baseline;
 }
 
 .footer-link {
@@ -464,4 +468,8 @@ img {
 .footer-link:hover,
 .footer-link:focus{
     background-color: #31d0aa;
+}
+.footer-list{
+    display: flex;
+    gap: 16px;
 }
