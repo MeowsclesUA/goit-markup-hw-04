@@ -469,7 +469,10 @@ img {
 .footer-link:focus{
     background-color: #31d0aa;
 }
-.footer-list{
+.container .footer-list{
     display: flex;
     gap: 16px;
+}
+.footer-list-item{
+    
 }
