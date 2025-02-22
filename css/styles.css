@@ -420,6 +420,7 @@ img {
   align-items: center;
   padding-right: 864px;
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
