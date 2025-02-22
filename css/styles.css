@@ -472,6 +472,7 @@ img {
 .container .footer-list{
     display: flex;
     gap: 16px;
+    align-items: baseline;
 }
 .footer-list-item{
     
