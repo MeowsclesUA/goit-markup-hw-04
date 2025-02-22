@@ -462,9 +462,11 @@ img {
     background-color: #31d0aa;
 }
 .container .footer-list{
-    display: flex;
+   display: flex;
+}
+.footer-list-item{
+     display: flex;
     gap: 16px;
-    align-items: baseline;
     background-color: #4d5ae5;
     align-items: center;
     justify-content: center;
@@ -473,7 +475,4 @@ img {
     border-radius: 50%;
     fill: #f4f4fd;
     margin-top: 16px;
-}
-.footer-list-item{
-    
 }
