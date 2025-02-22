@@ -455,15 +455,7 @@ img {
 }
 
 .footer-link {
-    background-color: #4d5ae5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    fill: #f4f4fd;
-    margin-top: 16px;
+    
 }
 .footer-link:hover,
 .footer-link:focus{
@@ -473,6 +465,14 @@ img {
     display: flex;
     gap: 16px;
     align-items: baseline;
+    background-color: #4d5ae5;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    fill: #f4f4fd;
+    margin-top: 16px;
 }
 .footer-list-item{
     
