@@ -324,14 +324,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 100%;
   border-radius: 50%;
   fill: #f4f4fd;
   margin-top: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+.list-soc-link{
+  width: 40px;
   height: 40px;
 }
-
 .third-section-link:hover,
 .third-section-link:focus {
   background-color: #404bbf;
